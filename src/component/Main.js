@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import '../public/css/Main.css'
+//TODO : 반응형 
+//TODO : carousel
 class Main extends Component {
     constructor(props) {
         super(props)
@@ -29,6 +31,7 @@ class Main extends Component {
         }
 
         while (j < _contents.data.length) {
+            console.log(_contents.data[j].src)
             data_list.push(<div key={_contents.data[j].id}><img id="img" alt="something" src={_contents.data[j].src}></img><h5 id="text">{_contents.data[j].desc}</h5></div>)
             j++
         }
